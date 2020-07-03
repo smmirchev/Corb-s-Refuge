@@ -1,7 +1,5 @@
 # Corb-s-Refuge
 
-<img src="https://github.com/smmirchev/Asteroids/blob/master/images/Interface.png">
-
 ## Getting Started
 Unity version **Unity3D 2018.4.10f1** must be installed to run this software.
 Visual Studio 2019 or newer version is required to avoid bugs.
@@ -9,12 +7,15 @@ Download all the files and open part3.sln with Visual Studio.
 
 ### Game Structure
 Main menu/option menu is implemented and can be accessed by pressing the Escape key. The menu is created in a non-playable scene and it looks the following way:
+
 <img src="https://github.com/smmirchev/Corb-s-Refuge/blob/master/images/menu1.png">
 
 New Game starts a new game, Options opens a different menu and Quit exits the game.
 Each one of the options is a button drawn on a canvas that calls a function when clicked. 
 Clicking Options disables the above shown options and displays new options, which look like this:
+
 <img src="https://github.com/smmirchev/Corb-s-Refuge/blob/master/images/menu2.png">
+
 Difficulty and Sound are text while the rest are buttons. Clicking on Easy or Hard makes the enemies stronger. 
 
 ### Gameplay
