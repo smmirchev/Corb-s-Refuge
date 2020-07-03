@@ -1,23 +1,39 @@
 # Corb-s-Refuge
 
+<img src="https://github.com/smmirchev/Asteroids/blob/master/images/Interface.png">
+
 ## Getting Started
 Unity version **Unity3D 2018.4.10f1** must be installed to run this software.
 Visual Studio 2019 or newer version is required to avoid bugs.
 Download all the files and open part3.sln with Visual Studio.
 
-## Gameplay
-The player starts without weapons and deals 10 damage per second to enemies. There are two weapons that can be found and equipped – axe and mace. Equipping the axe increases the damage to 15, the mace to 20. The player can equip weapons by pressing “F” while near the weapons.
-There are two playable scenes, both of which use terrain and have fade in/out transition. When the player passes through a tomb gate (collides with an invisible object) a function is called that will flash the transition animation and load the scene. 
+### Game Structure
+Main menu/option menu is implemented and can be accessed by pressing the Escape key. The menu is created in a non-playable scene and it looks the following way:
+<img src="https://github.com/smmirchev/Corb-s-Refuge/blob/master/images/menu1.png">
 
-## Art
+New Game starts a new game, Options opens a different menu and Quit exits the game.
+Each one of the options is a button drawn on a canvas that calls a function when clicked. 
+Clicking Options disables the above shown options and displays new options, which look like this:
+<img src="https://github.com/smmirchev/Corb-s-Refuge/blob/master/images/menu2.png">
+Difficulty and Sound are text while the rest are buttons. Clicking on Easy or Hard makes the enemies stronger. 
+
+### Gameplay
+There are two playable scenes, both of which use terrain and have fade in/out transition. When the player passes through a tomb gate (collides with an invisible object) a function is called that will flash the transition animation and load the scene. 
+The player starts without weapons and deals 10 damage per second to enemies. There are two weapons that can be found and equipped – axe and mace. Equipping the axe increases the damage to 15, the mace to 20. The player can equip weapons by pressing “F” while near the weapons.
+<img src="https://github.com/smmirchev/Corb-s-Refuge/blob/master/images/weapon.png">
+
+### Art
 Each scene has a unique background music playing.
 There is a directional light (pointing from the direction of the sun) and a spotlight, which follows the player and brightens the area around them.
 The camera is coded to follow the player behind their back as in third-person games.
 The camera can be freely moved by clicking and holding the right mouse button. In addition, the player will move in the direction the camera is facing just by holding “W”.
 Particle effects from static emitters are used inside the tomb.
 A lot of materials /shaders, a skybox, fog and assets from the asset store are used to make the feeling of playing more immersive. Here are some pictures from the game:
+<img src="https://github.com/smmirchev/Corb-s-Refuge/blob/master/images/env1.png">
+<img src="https://github.com/smmirchev/Corb-s-Refuge/blob/master/images/env2.png">
+<img src="https://github.com/smmirchev/Corb-s-Refuge/blob/master/images/env3.png">
 
-## AI Artifacts
+### AI Artifacts
 There is only one type of enemy, which is animated and uses NavMesh. The zombie is fully animated – it will stay in an idle state and walk to the player and attack them when the player enters their radius.
 
 ## Author
